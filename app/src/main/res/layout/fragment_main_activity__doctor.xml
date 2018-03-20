@@ -77,10 +77,72 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/Age"
+            android:id="@+id/Residence_info"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:text="Residence Info" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Address"
+            android:inputType="text"
+            android:hint="Address"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:layout_below="@id/Residence_info" />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:inputType="textAutoComplete"
+            android:hint="City"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:layout_below="@id/Address"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pin"
             android:id="@+id/Work_info"
             android:layout_margin="5dp"
             android:textSize="20sp"
             android:text="Work Info" />
+
+        <EditText
+            android:id="@+id/State"
+            android:layout_width="170dp"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:hint="State"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/city"
+            android:layout_below="@id/Address"
+            />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:hint="Pincode"
+            android:layout_below="@id/city"
+            android:id="@+id/pin"/>
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:hint="Country"
+            android:layout_below="@id/city"
+            android:layout_toRightOf="@id/pin"
+            android:id="@+id/country"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -88,13 +150,20 @@
             android:layout_below="@id/Work_info"
             android:layout_margin="10dp"
             android:textSize="15sp"
-            android:inputType="textAutoComplete"
+            android:inputType="text"
             android:id="@+id/Skills"
             android:hint="Skills E.g. Physiotherapy, Dentist, Ayurvedic" />
 
-        
-
-
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Skills"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:hint="Workplace"
+            android:id="@+id/WorkPlace"
+            android:paddingBottom="100dp" />
     </RelativeLayout>
 
     </ScrollView>
