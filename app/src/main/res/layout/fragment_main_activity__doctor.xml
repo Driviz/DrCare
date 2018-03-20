@@ -7,13 +7,95 @@
     android:layout_height="match_parent"
     tools:context="com.example.driviz.drcare.MainActivity_Doctor$PlaceholderFragment">
 
-    <com.example.driviz.drcare.RoundedImageView
-        android:id="@+id/imageView_round"
-        android:layout_width="80dp"
-        android:layout_gravity="center"
-        android:layout_height="80dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/sample_profile" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="20sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <com.example.driviz.drcare.RoundedImageView
+            android:id="@+id/imageView_round"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center"
+            android:src="@drawable/sample_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Personal_info"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal info"
+            android:layout_margin="5dp"
+            />
+        <EditText
+            android:id="@+id/Full_Name"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:layout_below="@id/Personal_info"
+            />
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:hint="Age"
+            android:layout_below="@id/Full_Name"/>
+
+        <Spinner
+            android:id="@+id/Gender"
+            android:layout_width="170dp"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:spinnerMode="dropdown"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Age"
+            android:layout_below="@id/Full_Name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Age"
+            android:id="@+id/Work_info"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:text="Work Info" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Work_info"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:inputType="textAutoComplete"
+            android:id="@+id/Skills"
+            android:hint="Skills E.g. Physiotherapy, Dentist, Ayurvedic" />
+
+        
 
 
+    </RelativeLayout>
+
+    </ScrollView>
 </android.support.v7.widget.LinearLayoutCompat>
