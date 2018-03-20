@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "541028619992",
+    "firebase_url": "https://drcare-8ee89.firebaseio.com",
+    "project_id": "drcare-8ee89",
+    "storage_bucket": "drcare-8ee89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541028619992:android:a5313a82b3e3a0b5",
+        "android_client_info": {
+          "package_name": "com.dtechterminal.drcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541028619992-1v459qrh38ns6posg90ga35k6rmesphv.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "541028619992-ejhkof9jii0io8c57e7k96prkhet0o4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dtechterminal.drcare",
+            "certificate_hash": "3ebb42cc48baeb0eda0a5d6688bbf72dd7ed5335"
+          }
+        },
+        {
+          "client_id": "541028619992-sku1gsbpirshqm8me3l4nceq4dl5fmn9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4UcuFC_DDUzudJ3Rwfz4MFYsMzD7YHnk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541028619992-1v459qrh38ns6posg90ga35k6rmesphv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541028619992:android:299d9d9af31c98b2",
+        "android_client_info": {
+          "package_name": "com.example.driviz.drcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541028619992-4ffb53dkhcs55in0sl6k7hqsjmlmnte1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.driviz.drcare",
+            "certificate_hash": "3ebb42cc48baeb0eda0a5d6688bbf72dd7ed5335"
+          }
+        },
+        {
+          "client_id": "541028619992-1v459qrh38ns6posg90ga35k6rmesphv.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "541028619992-sku1gsbpirshqm8me3l4nceq4dl5fmn9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4UcuFC_DDUzudJ3Rwfz4MFYsMzD7YHnk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541028619992-1v459qrh38ns6posg90ga35k6rmesphv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
