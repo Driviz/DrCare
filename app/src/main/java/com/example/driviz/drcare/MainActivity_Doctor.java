@@ -17,8 +17,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity_Doctor extends AppCompatActivity {
 
@@ -36,7 +42,6 @@ public class MainActivity_Doctor extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
-    private ImageView imageViewRound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,7 +106,6 @@ public class MainActivity_Doctor extends AppCompatActivity {
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
-        private ImageView imageViewRound;
 
         public PlaceholderFragment() {
         }
@@ -123,7 +127,7 @@ public class MainActivity_Doctor extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main_activity__doctor, container, false);
 
-            imageViewRound = rootView.findViewById(R.id.imageView_round);
+
             return rootView;
         }
     }
@@ -141,8 +145,17 @@ public class MainActivity_Doctor extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            switch (position) {
+                case 0:
+                    return Fragment1.newInstance();
+                case 1:
+                    return Fragment2.newInstance();
+                case 2:
+                    return Fragment3.newInstance();
+                default:
+                    //assume you only have 3
+                    throw new IllegalArgumentException();
+            }
         }
 
         @Override

@@ -12,7 +12,6 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.widget.ImageView;
 
 /**
  * Created by Driviz on 19-03-2018.
